@@ -11,7 +11,7 @@
         <script src="js/main.js"></script>
         
 </head>
-<body class="times">
+<body class="times" onload="fillForm()">
 <div class="row center-align">
     <b>Office of Campus Life</b>
 </div>
@@ -38,8 +38,10 @@
     </div>
 <!--Good-->
     <div class="row">
-        <div class="col l12 left-align" style="margin-left:-10px">
-    <b>Host (if serving alcohol, the host must be 21):</b> __________________________________ <b>Hall and Room #:</b> ______________
+        <div class="col l12 left-align" style="margin-left:-10px;display:inline">
+            
+                <b>Host (if serving alcohol, the host must be 21):</b> <div id="hosttext" style="display:inline">__________________________________</div><b> Hall and Room #:</b> ______________
+            
         </div>
     </div>
 <div class="row">
@@ -62,7 +64,7 @@
 </div>
 <div class="row">
     <div class="col l12 left-align" style="margin-left:-10px;margin-top:-15px">
-        <b>AMOUNT AND TYPE OF ALCOHOL:________________________________________________________________________________</b> 
+        <b>AMOUNT AND TYPE OF ALCOHOL:______________________________________________________________________________</b> 
     </div>
 </div>
 <div class="row">
@@ -77,7 +79,7 @@
 </div>
 <div class="row">
     <div class="col l12 left-align" style="margin-left:-10px;margin-top:-10px">
-        <b>Please note any additional considerations: (ie themed party, decorations, lights, DJ, etc):</b>_______________________________________
+        <b>Please note any additional considerations: (ie themed party, decorations, lights, DJ, etc):</b>_____________________________________
     </div>
 </div>
 

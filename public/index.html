@@ -5,7 +5,7 @@
         
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
-
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/jquery.min.js"></script>
         <script src="js/materialize.js"></script>
         <script src="js/main.js"></script>
@@ -53,90 +53,89 @@
       </div>
     </div>
   </div>
-  <div class="fluid" id="register-party" style="padding-top:90px">
+  <div class="fluid"  style="padding-top:90px">
     <div class="container">
       <div class="row">
-        <div class="section-header bold">
+        <div class="section-header bold" id="register-party">
           Register your party
         </div>
       </div>
        <div class="row">
         <form class="row">
+          <div class="offset-s3 col s6 center-align" style="padding-bottom:10px">
+            <a class="waves-effect waves-light btn" onclick="fillFields()">I'm Feeling Lucky</a>
+          </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="host" type="text" class="validate">
-              <label for="host" style="color:black">Event Host (if serving alcohol, host must be 21)</label>
+              <label for="host" class="black-text active">Event Host (if serving alcohol, host must be 21)</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="hallroomnum" type="text" class="validate">
-              <label for="hallroomnum">Hall and Room #</label>
+              <label for="hallroomnum" class="black-text active">Hall and Room #</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="day" type="text" class="validate">
-              <label for="day">Day of Party</label>
+              <label for="day" class="black-text">Day of Party</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="estattendance" type="text" class="validate">
-              <label for="estattendance">Estimated Attendance</label>
+              <label for="estattendance" class="black-text">Estimated Attendance</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="starttime" type="text" class="validate">
-              <label for="breakdowntime">Start Time</label>
+              <label for="starttime" class="black-text">Start Time</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="alcohol" type="text" class="validate">
-              <label for="alcohol">Amount and Type of Alcohol</label>
+              <label for="alcohol" class="black-text">Amount and Type of Alcohol</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="food" type="text" class="validate">
-              <label for="food">Food and Snacks</label>
+              <label for="food" class="black-text">Food and Snacks</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="nonalc" type="text" class="validate">
-              <label for="nonalc">Non-Alcoholic Beverages</label>
+              <label for="nonalc" class="black-text">Non-Alcoholic Beverages</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="considerations" type="text" class="validate">
-              <label for="considerations">Additional considerations</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="host" type="text" class="validate">
-              <label for="host">Event Host</label>
+              <label for="considerations" class="black-text">Additional considerations</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="hostphone" type="text" class="validate">
-              <label for="hostphone">Host Phone</label>
+              <label for="hostphone" class="black-text">Host Phone</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field offset-s3 col s6">
               <input id="hostemail" type="text" class="validate">
-              <label for="hostemail">Host Email</label>
+              <label for="hostemail" class="black-text">Host Email</label>
             </div>
           </div>
-          <button class="offset-s3 col s6 category-button">
-            Submit
-          </button>
+           <div class="offset-s3 col s6 center-align" style="padding-bottom:10px;">
+            <a class="waves-effect waves-light btn black" onclick="submit()" style="width:100%">Submit
+              <i class="material-icons right">send</i>
+            </a>
+          </div>
         </form>
       </div>
     </div>

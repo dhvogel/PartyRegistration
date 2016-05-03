@@ -7,9 +7,7 @@ use Rack::Static,
 static_page_mappings = {
   '/'                  => 'public/index.html',
   '/index.html'        => 'public/index.html',
-  '/submissions.html'   => 'public/submissions.html',
-  '/order-history.html' => 'public/order-history.html',
-  '/update-menus.html' => 'public/update-menus.html'
+  '/form.html'         => 'public/form.html'
 }
 
 static_page_mappings.each do |req, file|

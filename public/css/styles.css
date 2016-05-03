@@ -250,6 +250,22 @@ input:focus {
   width:100%;
   height:30px;
 }
+
+.greenbtn {
+  margin: 10px;
+  color:#17ee35;
+  background: transparent;
+  border: 1px solid #17ee35;
+  width:100%;
+  height:30px;
+}
+
+.greenbtn:hover {
+  background:#17ee35;
+  color:white;
+  border: 1px solid #17ee35;
+}
+
 .category-button:hover, .login-button{
     color:white;
     background: black;
