@@ -5,6 +5,10 @@
   font-size:12px;
 }
 
+.text-fld {
+  display:inline;
+}
+
 @font-face {
     font-family: "FuturaBold";
     src: url("../fonts/FuturaKoyu.ttf");

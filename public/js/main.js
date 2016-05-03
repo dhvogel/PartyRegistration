@@ -37,9 +37,17 @@ function submit() {
 	localStorage["food"] = $('#food').val()
 	localStorage["nonalc"] = $('#nonalc').val()
 	localStorage["considerations"] = $('#considerations').val()
+	localStorage["hostphone"] = $('#hostphone').val()
+	localStorage["hostemail"] = $('#hostemail').val()
 	window.location.href = "form.html"
 }
 
 function fillForm() {
 	document.getElementById("hosttext").innerHTML = "<u>" + localStorage["host"] + "</u>";
+	document.getElementById("hallroomnumtext").innerHTML = "<u>" + localStorage["hallroomnum"] + "</u>";
+
+
+
+
+
 }

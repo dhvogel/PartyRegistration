@@ -11,7 +11,7 @@
         <script src="js/main.js"></script>
         
 </head>
-<body class="times" onload="fillForm()">
+<body class="times">
 <div class="row center-align">
     <b>Office of Campus Life</b>
 </div>
@@ -40,13 +40,23 @@
     <div class="row">
         <div class="col l12 left-align" style="margin-left:-10px;display:inline">
             
-                <b>Host (if serving alcohol, the host must be 21):</b> <div id="hosttext" style="display:inline">__________________________________</div><b> Hall and Room #:</b> ______________
+                <b>Host (if serving alcohol, the host must be 21):</b> 
+                    <div id="hosttext" class="text-fld"> 
+                        __________________________________
+                    </div>
+                <b> Hall and Room #:</b> 
+                    <div id="hallroomnumtext" class="text-fld">
+                        ______________
+                    </div>
             
         </div>
     </div>
 <div class="row">
     <div class="col l6 left-align" style="margin-left:-10px">
-    <b>TODAYS DATE:</b>_______________
+        <b>TODAYS DATE:</b>
+        <div id = "daytext" class="text-fld">
+            _______________
+        </div>
     </div>
     <div class="col l6 left-align" style="padding-left:180px">
         <b>DAY AND DATE OF PARTY:</b>________________________
@@ -149,4 +159,7 @@
 </p>
 </div>
 </body>
+<script>
+    fillForm()
+</script>
 </html>
