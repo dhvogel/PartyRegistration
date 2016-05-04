@@ -43,6 +43,7 @@ function submit() {
 }
 
 function fillForm() {
+	alert("It looks weird now, but it will look like the actual form when printed.")
 	document.getElementById("hosttext").innerHTML = "<u>" + formatField(document.getElementById("hosttext").innerHTML,localStorage["host"]) + "</u>";
 	document.getElementById("hallroomnumtext").innerHTML = "<u>" + formatField(document.getElementById("hallroomnumtext").innerHTML,localStorage["hallroomnum"]) + "</u>";
 	document.getElementById("curdaytext").innerHTML = "<u>" + formatField(document.getElementById("curdaytext").innerHTML,getCurrentDate()) + "</u>";
