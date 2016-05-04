@@ -43,11 +43,48 @@ function submit() {
 }
 
 function fillForm() {
-	document.getElementById("hosttext").innerHTML = "<u>" + localStorage["host"] + "</u>";
-	document.getElementById("hallroomnumtext").innerHTML = "<u>" + localStorage["hallroomnum"] + "</u>";
-
-
-
-
-
+	document.getElementById("hosttext").innerHTML = "<u>" + formatField(document.getElementById("hosttext").innerHTML,localStorage["host"]) + "</u>";
+	document.getElementById("hallroomnumtext").innerHTML = "<u>" + formatField(document.getElementById("hallroomnumtext").innerHTML,localStorage["hallroomnum"]) + "</u>";
+	document.getElementById("curdaytext").innerHTML = "<u>" + formatField(document.getElementById("curdaytext").innerHTML,getCurrentDate()) + "</u>";
+	document.getElementById("daytext").innerHTML = "<u>" + formatField(document.getElementById("daytext").innerHTML,localStorage["day"]) + "</u>";
+	document.getElementById("estatttext").innerHTML = "<u>" + formatField(document.getElementById("estatttext").innerHTML,localStorage["estattendance"]) + "</u>";
+	document.getElementById("starttimetext").innerHTML = "<u>" + formatField(document.getElementById("starttimetext").innerHTML,localStorage["starttime"]) + "</u>";
+	document.getElementById("alctext").innerHTML = "<u>" + formatField(document.getElementById("alctext").innerHTML,localStorage["alcohol"]) + "</u>";
+	document.getElementById("foodtext").innerHTML = "<u>" + formatField(document.getElementById("foodtext").innerHTML,localStorage["food"]) + "</u>";
+	document.getElementById("nonalctext").innerHTML = "<u>" + formatField(document.getElementById("nonalctext").innerHTML,localStorage["nonalc"]) + "</u>";
+	document.getElementById("constext").innerHTML = "<u>" + formatField(document.getElementById("constext").innerHTML,localStorage["considerations"]) + "</u>";
+	document.getElementById("hostnametext").innerHTML = "<u>" + formatField(document.getElementById("hostnametext").innerHTML,localStorage["host"]) + "</u>";
+	document.getElementById("hostphonetext").innerHTML = "<u>" + formatField(document.getElementById("hostphonetext").innerHTML,localStorage["hostphone"]) + "</u>";
+	document.getElementById("hostroomtext").innerHTML = "<u>" + formatField(document.getElementById("hostroomtext").innerHTML,localStorage["hallroomnum"]) + "</u>";
+	document.getElementById("ishosttext").innerHTML = "<u>" + formatField(document.getElementById("ishosttext").innerHTML,"x") + "</u>";
 }
+
+function formatField(divHTML, text) {
+	var diff = divHTML.length - (text.length)
+	for (var i=0; i<diff; i++) {
+		text += "_"
+	}
+	return text
+}
+
+function getCurrentDate() {
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	var yyyy = today.getFullYear();
+
+	if(dd<10) {
+	    dd='0'+dd
+	} 
+
+	if(mm<10) {
+	    mm='0'+mm
+	} 
+
+	today = mm+'/'+dd+'/'+yyyy;
+	return today
+}
+
+
+
+
