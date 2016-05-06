@@ -28,6 +28,7 @@ function fillFields() {
 }
 
 function submit() {
+	alert("test")
 	localStorage["host"] = $('#host').val()
 	localStorage["hallroomnum"] = $('#hallroomnum').val()
 	localStorage["day"] = $('#day').val()
@@ -39,7 +40,8 @@ function submit() {
 	localStorage["considerations"] = $('#considerations').val()
 	localStorage["hostphone"] = $('#hostphone').val()
 	localStorage["hostemail"] = $('#hostemail').val()
-	window.location.href = "form.html"
+
+	location.href = "form.html"
 }
 
 function fillForm() {

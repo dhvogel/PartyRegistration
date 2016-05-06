@@ -22,7 +22,11 @@
       </div>
       <div class="row center-align">
         <div class="section-header">
-            Making it easier for Colby students to register parties on campus.
+            Combating Colby's archaic party registration policy.
+            <br />
+            <div style="font-size:18px">
+              *Must be on Chrome for this to work properly right now*
+            </div>
         </div>
       </div>
       <div class="row center-align" style="padding-top:50px">
@@ -31,7 +35,7 @@
             <div class="card blue" onclick="window.location.href='#register-party'">
               <div class="card-content white-text">
                 <span class="card-title">Register a party.</span>
-                <p>According to Colby, <a style="color:#17ee35" href="http://www.colby.edu/administration_cs/student-affairs/drinking.cfm">Registered parties result in fewer problems for hosts, guests, and neighbors.</a> Register your party to make partying an easier process for all involved!</p>
+                <p>Could be a real party, could be a fake party. It's up to Campus Life to decide.</p>
               </div>
             </div>
           </div>
@@ -127,16 +131,28 @@
               <label for="hostphone" class="black-text">Host Phone</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field offset-s3 col s6">
-              <input id="hostemail" type="text" class="validate">
-              <label for="hostemail" class="black-text">Host Email</label>
-            </div>
-          </div>
-           <div class="offset-s3 col s6 center-align" style="padding-bottom:10px;">
+          <div class="offset-s3 col s6 center-align" style="padding-bottom:10px;">
             <a class="waves-effect waves-light btn black" onclick="submit()" style="width:100%">Submit
               <i class="material-icons right">send</i>
             </a>
+            <script type="text/javascript">
+              function submit() {
+                alert("test")
+                localStorage["host"] = $('#host').val()
+                localStorage["hallroomnum"] = $('#hallroomnum').val()
+                localStorage["day"] = $('#day').val()
+                localStorage["estattendance"] = $('#estattendance').val()
+                localStorage["starttime"] = $('#starttime').val()
+                localStorage["alcohol"] = $('#alcohol').val()
+                localStorage["food"] = $('#food').val()
+                localStorage["nonalc"] = $('#nonalc').val()
+                localStorage["considerations"] = $('#considerations').val()
+                localStorage["hostphone"] = $('#hostphone').val()
+                localStorage["hostemail"] = $('#hostemail').val()
+
+                location.href = "form.html"
+              }
+            </script>
           </div>
         </form>
       </div>
@@ -147,11 +163,6 @@
       View other registered parties
     </div>
   </div>-->
-  <div class="container">
-  <div class="row right-align">
-    Web Design by Dan Vogel
-  </div>
-</div>
 </body> 
 
 </html>
